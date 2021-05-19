@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray
+}
+#main {
+    width: 90%;
+    text-align: center;
+}
+#fejresz {
+    font-size: 40px;
+    font-weight: bold; 
+}
+#tartalom p {
+    font-size: 25px;
+}
+img:hover {
+    width: 200px;
+    transition: 0.5s;
+    cursor: zoom-in;
+}
