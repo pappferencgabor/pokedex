@@ -1,8 +1,14 @@
 body {
     background-color: lightgray
 }
+#focim {
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+    text-transform: uppercase;
+}
 #main {
-    width: 90%;
+    width: 95%;
     text-align: center;
 }
 #fejresz {
@@ -11,9 +17,13 @@ body {
 }
 #tartalom p {
     font-size: 25px;
+    padding: 0;
+}
+img {
+    width: 300px;
 }
 img:hover {
-    width: 200px;
+    width: 350px;
     transition: 0.5s;
     cursor: zoom-in;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="utf-8">
@@ -8,88 +8,390 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Pokédex</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip1").click(function () {
+                $("#panel1").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip2").click(function () {
+                $("#panel2").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip3").click(function () {
+                $("#panel3").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip4").click(function () {
+                $("#panel4").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip5").click(function () {
+                $("#panel5").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip6").click(function () {
+                $("#panel6").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip7").click(function () {
+                $("#panel7").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip8").click(function () {
+                $("#panel8").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip9").click(function () {
+                $("#panel9").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip10").click(function () {
+                $("#panel10").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip11").click(function () {
+                $("#panel11").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip12").click(function () {
+                $("#panel12").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip13").click(function () {
+                $("#panel13").slideToggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .panel,
+        .flip {
+            padding: 5px;
+            text-align: center;
+            color: #315F8C;
+            font-size: 25px;
+            font-family: Georgia;
+            cursor: pointer;
+            background-color: #d9d9d9 !important;
+            border-bottom: solid 3px #FFFFFF;
+        }
+
+        .panel {
+            padding: 0px;
+            display: none;
+            cursor: auto;
+        }
+    </style>
 </head>
 
 <body>
+    <h1 id="focim">Pokédex</h1>
     <div class="container-fluid" id="main">
-        <div class="row" id="fejresz">
-            <div class="col-4">
-                <p>Képe</p>
-            </div>
-            <div class="col-4">
-                <p>Neve</p>
-            </div>
-            <div class="col-4">
-                <p>Képessége</p>
+        <div class="flip" id="flip1">
+            <b>Pikachu</b>
+        </div>
+        <div class="panel" id="panel1">
+
+            <div class="row" id="tartalom">
+                <div class="col-6">
+                    <img src="pikachu.jpg" alt="">
+                </div>
+                <div class="col-6">
+                    <p>Hp: 45</p><br>
+                    <p>Attack: 80</p><br>
+                    <p>Defense: 50</p><br>
+                    <p>Sp. Atk.: 75</p><br>
+                    <p>Sp. Def.: 60</p><br>
+                    <p>Speed: 120</p><br>
+                    <p>Total: 430</p>
+                </div>
             </div>
         </div>
+
+    <div class="flip" id="flip2">
+        <b>Bulbasaur</b>
+    </div>
+    <div class="panel" id="panel2">
 
         <div class="row" id="tartalom">
-            <div class="col-4">
-                <img src="pikachu.jpg" alt="" width="175px">
+            <div class="col-6">
+                <img src="bulbasaur.jpg" alt="">
             </div>
-            <div class="col-4">
-                <p>Pikachu</p>
-            </div>
-            <div class="col-4">
-
-            </div>
-        </div>
-
-        <div class="row" id="tartalom">
-            <div class="col-4">
-                <img src="bulbasaur.jpg" alt="" width="175px">
-            </div>
-            <div class="col-4">
-                <p>Bulbasaur</p>
-            </div>
-            <div class="col-4">
-                <p></p>
+            <div class="col-6">
+                <p>Hp: 45</p><br>
+                <p>Attack: 49</p><br>
+                <p>Defense: 49</p><br>
+                <p>Sp. Atk.: 65</p><br>
+                <p>Sp. Def.: 65</p><br>
+                <p>Speed: 45</p><br>
+                <p>Total: 318</p>
             </div>
         </div>
-
-        <div class="row" id="tartalom">
-            <div class="col-4">
-
-            </div>
-            <div class="col-4">
-                <p></p>
-            </div>
-            <div class="col-4">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="row" id="tartalom">
-            <div class="col-4">
-
-            </div>
-            <div class="col-4">
-                <p></p>
-            </div>
-            <div class="col-4">
-                <p></p>
-            </div>
-        </div>
-
     </div>
 
+    <div class="flip" id="flip3">
+        <b>Ivysaur</b>
+    </div>
+    <div class="panel" id="panel3">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="ivysaur.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 60</p><br>
+                <p>Attack: 62</p><br>
+                <p>Defense: 63</p><br>
+                <p>Sp. Atk.: 80</p><br>
+                <p>Sp. Def.: 80</p><br>
+                <p>Speed: 60</p><br>
+                <p>Total: 405</p>
+            </div>
+        </div>   
+    </div>
+
+    <div class="flip" id="flip4">
+        <b>Venusaur</b>
+    </div>
+    <div class="panel" id="panel4">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="venusaur.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 80</p><br>
+                <p>Attack: 100</p><br>
+                <p>Defense: 123</p><br>
+                <p>Sp. Atk.: 122</p><br>
+                <p>Sp. Def.: 120</p><br>
+                <p>Speed: 80</p><br>
+                <p>Total: 625</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip5">
+        <b>Charizard</b>
+    </div>
+    <div class="panel" id="panel5">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="charizard.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 78</p><br>
+                <p>Attack: 84</p><br>
+                <p>Defense: 78</p><br>
+                <p>Sp. Atk.: 109</p><br>
+                <p>Sp. Def.: 85</p><br>
+                <p>Speed: 100</p><br>
+                <p>Total: 534</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip6">
+        <b>Blastoise</b>
+    </div>
+    <div class="panel" id="panel6">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="blastoise.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 79</p><br>
+                <p>Attack: 83</p><br>
+                <p>Defense: 100</p><br>
+                <p>Sp. Atk.: 85</p><br>
+                <p>Sp. Def.: 105</p><br>
+                <p>Speed: 78</p><br>
+                <p>Total: 530</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip7">
+        <b>Charmander</b>
+    </div>
+    <div class="panel" id="panel7">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="charmander.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 58</p><br>
+                <p>Attack: 64</p><br>
+                <p>Defense: 58</p><br>
+                <p>Sp. Atk.: 80</p><br>
+                <p>Sp. Def.: 65</p><br>
+                <p>Speed: 80</p><br>
+                <p>Total: 405</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip8">
+        <b>Squirtle</b>
+    </div>
+    <div class="panel" id="panel8">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="squirtle.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 44</p><br>
+                <p>Attack: 48</p><br>
+                <p>Defense: 65</p><br>
+                <p>Sp. Atk.: 50</p><br>
+                <p>Sp. Def.: 64</p><br>
+                <p>Speed: 43</p><br>
+                <p>Total: 314</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip9">
+        <b>Wartortle</b>
+    </div>
+    <div class="panel" id="panel9">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="wartortle.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 59</p><br>
+                <p>Attack: 63</p><br>
+                <p>Defense: 80</p><br>
+                <p>Sp. Atk.: 65</p><br>
+                <p>Sp. Def.: 80</p><br>
+                <p>Speed: 58</p><br>
+                <p>Total: 405</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip10">
+        <b>Caterpie</b>
+    </div>
+    <div class="panel" id="panel10">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="caterpie.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 45</p><br>
+                <p>Attack: 30</p><br>
+                <p>Defense: 35</p><br>
+                <p>Sp. Atk.: 20</p><br>
+                <p>Sp. Def.: 20</p><br>
+                <p>Speed: 45</p><br>
+                <p>Total: 195</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip11">
+        <b>Matapod</b>
+    </div>
+    <div class="panel" id="panel11">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="metapod.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 50</p><br>
+                <p>Attack: 20</p><br>
+                <p>Defense: 55</p><br>
+                <p>Sp. Atk.: 25</p><br>
+                <p>Sp. Def.: 25</p><br>
+                <p>Speed: 30</p><br>
+                <p>Total: 205</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip12">
+        <b>Butterfree</b>
+    </div>
+    <div class="panel" id="panel12">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="butterfree.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 60</p><br>
+                <p>Attack: 45</p><br>
+                <p>Defense: 50</p><br>
+                <p>Sp. Atk.: 90</p><br>
+                <p>Sp. Def.: 80</p><br>
+                <p>Speed: 70</p><br>
+                <p>Total: 395</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip" id="flip13">
+        <b>Weedle</b>
+    </div>
+    <div class="panel" id="panel13">
+
+        <div class="row" id="tartalom">
+            <div class="col-6">
+                <img src="weedle.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <p>Hp: 40</p><br>
+                <p>Attack: 35</p><br>
+                <p>Defense: 30</p><br>
+                <p>Sp. Atk.: 20</p><br>
+                <p>Sp. Def.: 20</p><br>
+                <p>Speed: 50</p><br>
+                <p>Total: 195</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script>
+        function onYtEvent(payload) {
+            if (payload.eventType == 'subscribe') {
+                // Add code to handle subscribe event.
+            } else if (payload.eventType == 'unsubscribe') {
+                // Add code to handle unsubscribe event.
+            }
+            if (window.console) { // for debugging only
+                window.console.log('YT event: ', payload);
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <!--
-        <div class="row" id="tartalom">
-            <div class="col-4">
-                
-            </div>
-            <div class="col-4">
-                <p></p>
-            </div>
-            <div class="col-4">
-                <p></p>
-            </div>
-        </div>
-    -->
 </body>
 
 </html>
